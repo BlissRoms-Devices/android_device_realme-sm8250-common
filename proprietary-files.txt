@@ -1598,7 +1598,6 @@ system_ext/priv-app/ims/ims.apk|5690534155879d101cbe323456b01f29cb97b8b4
 # Radio - IMS
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
 system_ext/app/imssettings/imssettings.apk
-system_ext/app/uceShimService/uceShimService.apk
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
 system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar
 system_ext/framework/com.qualcomm.qti.uceservice-V2.3-java.jar
