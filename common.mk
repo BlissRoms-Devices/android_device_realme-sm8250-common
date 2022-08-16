@@ -124,6 +124,9 @@ PRODUCT_COPY_FILES += \
 # Charateristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Dex/ART optimization
+DONT_DEXPREOPT_PREBUILTS := true
+
 # Display
 TARGET_DISABLE_MEMTRACK := true
 
