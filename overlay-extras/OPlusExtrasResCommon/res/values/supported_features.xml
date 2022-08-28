@@ -6,7 +6,7 @@
 <resources>
 
     <!-- Whether device supports Alert Slider -->
-    <bool name="config_deviceSupportsAlertSlider">true</bool>
+    <bool name="config_deviceSupportsAlertSlider">false</bool>
 
     <!-- Whether device supports Per-App Refresh Rate -->
     <bool name="config_deviceSupportsPerAppRefreshRate">true</bool>
@@ -30,7 +30,7 @@
     <bool name="config_deviceSupportsAdrenoBoost">true</bool>
 
     <!-- Whether device supports Touch Screen Gestures -->
-    <bool name="config_deviceSupportsTouchScreenGestures">true</bool>
+    <bool name="config_deviceSupportsTouchScreenGestures">false</bool>
 
     <!-- Whether to show Jitter Test -->
     <bool name="config_deviceSupportsJitterTest">true</bool>
