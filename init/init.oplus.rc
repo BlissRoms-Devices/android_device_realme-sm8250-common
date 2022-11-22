@@ -93,6 +93,8 @@ on boot
 
     # Touchpanel
     write /proc/touchpanel/game_switch_enable 1
+    write /proc/touchpanel/smooth_level 3
+    write /proc/touchpanel/sensitive_level 3
     chown system system /dev/tp_misc
     chown system system /proc/touchpanel/tp_fw_update
     chown system system /proc/touchpanel/oplus_tp_limit_enable
