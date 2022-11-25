@@ -88,6 +88,10 @@ on boot
     chown system system /sys/kernel/oplus_display/notify_fppress
     chown system system /sys/kernel/oplus_display/panel_serial_number
 
+    # DC Dimming
+    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
+    chmod 0660 /sys/kernel/oplus_display/dimlayer_bl_en
+
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
