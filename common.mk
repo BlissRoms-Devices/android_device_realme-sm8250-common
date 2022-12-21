@@ -286,8 +286,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc_snxxx@1.2-service \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.nfc_snxxx@1.2-service
 
 PRODUCT_PACKAGES += \
     NfcNci \
@@ -353,6 +352,11 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor
+
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
