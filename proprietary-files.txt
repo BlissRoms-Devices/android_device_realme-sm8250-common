@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from realme GT Neo2 5G (RMX3370_11.C.09).
+## from realme GT Neo2 5G (RMX3370_11.C.10).
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -124,6 +124,14 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # Bluetooth (aptX) - from raven-user 13 TP1A.220624.021 8877034 release-keys
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
+# Bluetooth (LDAC) from oneplus 8t
+system/lib/libldacBT_abr.so|0fa74e2d405b5b98034214cb12a516a9269b5522
+system/lib/libldacBT_enc.so|5f22c53411f50ff8fe75ab9010393f7d2ad68471
+system/lib/liblhdcBT_enc.so|fccbaa68fae06d3a6dda4e9a5db523d540ae248b
+system/lib64/libldacBT_abr.so|2f0607e051f8901e47e1b212390246968f9ae0cb
+system/lib64/libldacBT_enc.so|fb6f1f186d93ff5646da115c45a228d27f667156
+system/lib64/liblhdcBT_enc.so|c211a8d0909fa4c0dbbf7ffd9b8ee0c56cd85c12
 
 # Camera
 odm/etc/camera/aicolor/duallut_background.bmp
@@ -1152,12 +1160,6 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
-
-# Hotword Enrollment
-my_product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml:product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml	
-my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
