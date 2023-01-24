@@ -1817,6 +1817,7 @@ odm/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin
 odm/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin
 odm/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin
 odm/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin
+odm/firmware/aw8697_Airy_morning_RTP_70_237Hz.bin
 odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin
 odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_165Hz.bin
 odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_175Hz.bin
