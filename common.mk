@@ -123,7 +123,6 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Camera2 \
     GcamGo
 
 PRODUCT_COPY_FILES += \
