@@ -79,4 +79,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.dumpstate</name>
+        <transport>hwbinder</transport>
+        <interface>
+            <name>IDumpstateDevice</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IDumpstateDevice/default</fqname>
+        <fqname>@1.1::IDumpstateDevice/default</fqname>
+    </hal>
 </compatibility-matrix>
