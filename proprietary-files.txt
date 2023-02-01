@@ -1464,6 +1464,8 @@ vendor/bin/init.mdm.sh
 vendor/bin/embmsslServer
 vendor/bin/ks
 vendor/bin/mdm_helper
+vendor/bin/ipacm-diag
+vendor/bin/nqnfcinfo
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qrtr-cfg
@@ -1658,6 +1660,7 @@ odm/lib64/android.hardware.secure_element@1.0-impl.so
 # Sensors
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/bin/oplus_sensor_fb
+odm/bin/sensor_recover.sh
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
 odm/etc/vintf/manifest/manifest_oplusSensor.xml
 odm/lib64/liboplus_service.so
@@ -2681,3 +2684,6 @@ vendor/lib64/libtrustedapploader.so
 
 # Wifi
 vendor/bin/cnss-daemon
+
+# Others
+vendor/bin/init.qcom.class_core.sh
