@@ -82,7 +82,6 @@ on boot
 
     # Display
     chown system system /dev/oplus_display
-    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
     chown system system /sys/kernel/oplus_display/dynamic_osc_clock
     chown system system /sys/kernel/oplus_display/hbm
     chown system system /sys/kernel/oplus_display/notify_fppress
