@@ -1188,6 +1188,8 @@ vendor/etc/lowi.conf
 vendor/etc/sap.conf
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
+vendor/lib/liblocdiagiface.so
+vendor/lib64/liblocdiagiface.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libaoa.so
