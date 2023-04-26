@@ -129,6 +129,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Display
+TARGET_DISABLE_MEMTRACK := true
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
