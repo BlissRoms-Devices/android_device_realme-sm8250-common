@@ -132,9 +132,6 @@ vendor.gatekeeper.disable_spu=true
 # Graphics
 debug.sf.auto_latch_unsignaled=true
 debug.sf.disable_backpressure=1
-debug.composition.type=gpu
-persist.sys.composition.type=gpu
-debug.hwui.renderer=skiagl
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
