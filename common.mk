@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
 
 
 PRODUCT_PACKAGES += \
+    libbthost_if \
     libldacBT_bco \
     libldacBT_bco.vendor \
     liblhdc \
@@ -118,8 +119,7 @@ PRODUCT_PACKAGES += \
     liblhdcBT_enc \
     liblhdcdec \
     liblhdcBT_dec \
-    libbluetooth_audio_session \
-    libbthost_if_sink
+    libbluetooth_audio_session
 
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
