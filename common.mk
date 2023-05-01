@@ -106,20 +106,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default 
-
+    audio.bluetooth.default
 
 PRODUCT_PACKAGES += \
-    libbthost_if \
-    libldacBT_bco \
-    libldacBT_bco.vendor \
-    liblhdc \
-    libldacBT_enc \
-    libldacBT_abr \
-    liblhdcBT_enc \
-    liblhdcdec \
-    liblhdcBT_dec \
-    libbluetooth_audio_session
+    libbthost_if
 
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
