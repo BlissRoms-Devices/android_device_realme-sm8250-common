@@ -308,14 +308,14 @@ PRODUCT_PACKAGES += \
 
 # OPlusExtras
 PRODUCT_PACKAGES += \
-    OPlusExtras \
-    tri-state-key-calibrate
+    OPlusExtras
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
+    EvolutionFrameworksResCommon \
     FrameworksResTarget \
     OPlusCarrierConfigResCommon \
     OPlusExtrasResCommon \

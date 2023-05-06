@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2022 The Evolution X Project
+     Copyright (C) 2023 The Evolution X Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.overlay.evolution.oplus.OPlusExtras">
+    package="android.overlay.OPlusExtras.common">
 
     <overlay
         android:isStatic="true"
