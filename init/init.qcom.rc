@@ -419,7 +419,7 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
-service nqnfcinfo /vendor/bin/nqnfcinfo
+service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
     user system
@@ -431,6 +431,12 @@ service iop /system/vendor/bin/iop
     group root
     disabled
     socket iop seqpacket 0666 root system
+
+service qcomsysd /system/vendor/bin/qcom-system-daemon
+    class main
+    user root
+    group root diag oem_2901
+    disabled
 
 on property:persist.vendor.qcomsysd.enabled=1
     enable qcomsysd
@@ -642,6 +648,13 @@ service iprenew_wigig0 /system/bin/dhcpcd -n
     disabled
     oneshot
 
+service ptt_socket_app /system/vendor/bin/ptt_socket_app -d
+    class main
+    user wifi
+    group wifi system inet net_admin
+    capabilities NET_ADMIN
+    oneshot
+
 service ptt_ffbm /system/vendor/bin/ptt_socket_app -f -d
     user root
     group root
@@ -730,6 +743,11 @@ on property:sys.boot_completed=1
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
+
+service qvop-daemon /vendor/bin/qvop-daemon
+    class late_start
+    user system
+    group system drmrpc
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
@@ -843,6 +861,16 @@ service vendor.LKCore-rel /vendor/bin/LKCore
     disabled
     user system
     group system log diag
+
+service qseeproxydaemon /system/vendor/bin/qseeproxydaemon
+    class late_start
+    user system
+    group system
+
+service esepmdaemon /system/vendor/bin/esepmdaemon
+    class core
+    user system
+    group nfc
 
 on charger
     setprop persist.sys.usb.config mass_storage
