@@ -49,6 +49,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.engcamera</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEngCamera</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.extcamera</name>
         <version>1.0</version>
         <interface>
