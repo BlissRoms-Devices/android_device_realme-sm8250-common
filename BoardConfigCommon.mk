@@ -128,6 +128,7 @@ BOARD_KERNEL_CMDLINE := \
     swiotlb=2048
 
 KERNEL_CUSTOM_LLVM := true
+KERNEL_FULL_LLVM := true
 
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ADDITIONAL_FLAGS += NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
