@@ -112,6 +112,10 @@ on boot
     chown system system /proc/touchpanel/charge_detect
     chown system system /proc/touchpanel/wireless_charge_detect
 
+    # Smart charging input suspend node
+    chown system system /sys/devices/virtual/oplus_chg/battery/mmi_charging_enable
+    chmod 0666 /sys/devices/virtual/oplus_chg/battery/mmi_charging_enable
+    
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
