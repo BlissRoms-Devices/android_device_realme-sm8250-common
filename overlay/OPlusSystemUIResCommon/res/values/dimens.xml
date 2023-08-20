@@ -20,5 +20,5 @@
     <dimen name="keyguard_indication_margin_bottom">120dp</dimen>
 
     <!-- The text size for battery level -->
-    <dimen name="battery_level_text_size">04sp</dimen>
+    <dimen name="battery_level_text_size">05sp</dimen>
 </resources>
