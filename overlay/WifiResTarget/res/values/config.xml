@@ -23,7 +23,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
-    <bool translatable="false" name ="config_wifi6ghzSupport">false</bool>
+    <bool translatable="false" name ="config_wifi6ghzSupport">true</bool>
 
     <!-- Indicates that 11ax mode is supported on this device
            Note that if this flag is set to true, then 11ax is assumed to be supported.
