@@ -1242,6 +1242,7 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Hotword Enrollment
 my_product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml:product/etc/permissions/com.android.hotwordenrollment.okgoogle.xml
+product/etc/permissions/com.android.hotwordenrollment.xgoogle.xml|cc9bb55a3d5c10f86d330f4527ee6696ea45ddfafa15171b2951777479c8d6b0
 my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
 my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
 my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk
