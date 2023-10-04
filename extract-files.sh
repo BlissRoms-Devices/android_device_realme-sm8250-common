@@ -73,7 +73,7 @@ function blob_fixup() {
             "${SIGSCAN}" -p "AF 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         vendor/lib/libgui1_vendor.so)
-            patchelf --replace-needed "libui.so" "libui-v30.so" "${2}"
+            "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
         odm/lib64/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
