@@ -270,6 +270,7 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor
 
 # Media
+TARGET_USES_CUSTOM_C2_MANIFEST := true
 GENERIC_ODM_IMAGE := true
 
 PRODUCT_COPY_FILES += \
