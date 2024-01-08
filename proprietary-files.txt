@@ -826,7 +826,6 @@ vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
 vendor/lib64/libFace3DTA.so
 vendor/lib64/libFace3D_hlos.so
 vendor/lib64/libQ6MSFR_manager_stub.so
@@ -1087,43 +1086,63 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics (Adreno)
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
+# Graphics (Adreno) - from Driver Full 744.12 (tryigit.dev)
+vendor/lib/egl/eglSubDriverAndroid.so|c0f92737409f12e65f65d176c7d0ec14bb807c0a31a9f175c076cddc13dc79d1
+vendor/lib/egl/libEGL_adreno.so|8372f7bb1e02583ebe2d7f551c072682f1eae236fc427668125952a31ae530e9
+vendor/lib/egl/libGLESv1_CM_adreno.so|97f72bab98aa46923932db0c5c326630480cfbba8ac30926abaa136e08b0014a
+vendor/lib/egl/libGLESv2_adreno.so|b2c408279b62582c6ee4dbb4bda22a1b710f2442ec8e67838ecbf2c55f7a63f9
+vendor/lib/egl/libq3dtools_adreno.so|332e208ea282809fb0c4592c48b1e137e382857669668a6a63ed4355b06d4e96
+vendor/lib/egl/libq3dtools_esx.so|fa7552344bc86deabcb061cd7e457a9aeaba9da63443fc3b05792e0315dbdc71
+vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so|456bede2a5630e11e24b4958d0e324ce2fdce0d8da06b6b3c0eba5d936e0fd3b
 vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
+vendor/lib/libCB.so|281a9642219d0cddd59d8b22e826c8804ec5f427f21d38ec7dac51b030a0ae2f
+vendor/lib/libOpenCL.so|b5809f8c572ea66d74d20c6ace9f407fa5029bb28e53879bd20c9426dedc1f70
 vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libgpudataproducer.so
+vendor/lib/libadreno_utils.so|7afdfc68a22dd41698ceef06f50ab4eb3ba0db8402728cb62179315f1e70f422
+vendor/lib/libgpudataproducer.so|463fbf880f11900186a849592e657cf394728fbebfcd37ab5dfec15bad0fd73f
 vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib/libgsl.so|d9ac90c494df2cac72ac2ee925e1f00d9748ab13076f02e84b5d923e0ba6e44b
+vendor/lib/libllvm-glnext.so|c88090982d9e19051f72d4ae0717fcc6e2179b4790945b863ce5b04a15cb482b
+vendor/lib/libllvm-qcom.so|68a9f9b3f26547c10bbb0e9afc060968b8c4eb6202b0e6ad78a6f4c524a04254
+vendor/lib64/egl/eglSubDriverAndroid.so|b523a90d7254afc274b7d9fe270ef733ac65b98a59712d18a867a9f3052c85d5
+vendor/lib64/egl/libEGL_adreno.so|ff8b0fc68dc9292bfadc5bb259215c32cf4b80120cd55d2467a11b00a5c9e510
+vendor/lib64/egl/libGLESv1_CM_adreno.so|a80a926380d584f51fe6976fc12bf742ce988013f1db47bbf3e3861646df545f
+vendor/lib64/egl/libGLESv2_adreno.so|5b9d7ec41f71a892516a3b29d72a6ca80ae24b2e37345abe960447ef31d3e1f2
+vendor/lib64/egl/libq3dtools_adreno.so|039d05456e5e06c4aae673fb90abc5c1ad103749dee829f9adad25036e127296
+vendor/lib64/egl/libq3dtools_esx.so|41e9a6315ea709f9c16d48a65c25dafbceaefe1f501bda3c2bec59ac4df62095
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|8fd3c5616f45bed950f8da8a9b7233f5977751588da9d8ff380dcc6816090243
 vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
+vendor/lib64/libCB.so|294abdc6b2512832ac7737816c986eb4a34432564c0de26d4cc10d8a94eb483e
+vendor/lib64/libOpenCL.so|0d78755b26b30b31841e41008722aa5622bd134dfac946326e54b772e83504aa
 vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/libadreno_utils.so
+vendor/lib64/libadreno_utils.so|81181fa4ce2ba607ee8afc766bc65720ddf515cc0f3292f46551cc44fadd4f51
 vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
+vendor/lib64/libgpudataproducer.so|a0c3529ed67cba8719c53f61040deabac6315798d6a80d729f47023508140cb1
+vendor/lib64/libgsl.so|a7bdef1015fdef77c5de17eec5bf5dfc84aa4deb5a7a195bdf40eac54d35c7f1
+vendor/lib64/libllvm-glnext.so|41776a0e32877e00bc88e572803328eede15d0561c4d22712080efec2139e163
+vendor/lib64/libllvm-qcom.so|22f0b9a785b2fc848dd9ff1faa49f3f46f3f1c95af792f32ac5d373513621837
 
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
+# Graphics (Vulkan) - from Driver Full 744.12 (tryigit.dev)
+vendor/lib/hw/vulkan.adreno.so|e3b870679404221976ff9f3ee4a4373ae378f1a202b6019f758bd41aefb279d9
+vendor/lib64/hw/vulkan.adreno.so|d99e66d084426233b4020734e1890f35db06e5e19962668f4eae2022dd282671
+
+# Graphics (Misc) - from Driver Full 744.12 (tryigit.dev)
+vendor/lib/libadreno_app_profiles.so|d024c85a156c299466fcc26e3075cb63aa1018cf114c881a22f3fedf36b12a7e
+vendor/lib/libdmabufheap.so|30756c69ed541954fb8632ddb1fbe59fd92c28f2f2bcaa04ae8afe748d21ae3d
+vendor/lib/libgpudataproducer.so|463fbf880f11900186a849592e657cf394728fbebfcd37ab5dfec15bad0fd73f
+vendor/lib/libkernelmanager.so|bf3cc9be545e551d67b3a540c0d10204fceedcfa7791eead6a896ad8911f34b1
+vendor/lib/libllvm-qgl.so|6c474519f50557ba89a5217d53636c12b186bc67cf4d1e0de9601c31e6dd64d1
+vendor/lib/libOpenCL_adreno.so|c065290cccce20fa7fa52a98495030a0cf46262842a34f2f26162c5fef776254
+vendor/lib64/libadreno_app_profiles.so|f341f8d939e9698bd6f75756bec2d5d81cff26eb0a69bfb0f565af430872e304
+vendor/lib64/libdmabufheap.so|b7eeead8d1e7b62f3a7991b4c9aeefbc923640d8a70b2367980b32f165abe180
+vendor/lib64/libgpudataproducer.so|a0c3529ed67cba8719c53f61040deabac6315798d6a80d729f47023508140cb1
+vendor/lib64/libkernelmanager.so|45dcfe4dd8bb9b0be84ea650659274eec3ad4c5116a82168bc53aac62be72842
+vendor/lib64/libllvm-qgl.so|7ee3f17d8b941bd88881473f8550f43ef06be7ffda700c90bf4ac3f8a0d5451a
+vendor/lib64/libOpenCL_adreno.so|bbf8fcdd23bdd0e95642bdc0fa8c8213ed7f7261d8508d80874fc8aa18cabfbc
+
+# Graphics (Firmware) - from Driver Full 744.12 (tryigit.dev)
+vendor/firmware/a650_gmu.bin|df79fa8482fcc7587bb239b9c9e2b24bce4729893b990fe3f82b30da8175b01c
+vendor/firmware/a650_sqe.fw|b45bf31385376000ee257dc2d26354e961a0a95bd1506f6de5e4931aa4f4a6d2
 
 # GNSS
 odm/etc/izat.conf
