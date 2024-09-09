@@ -601,8 +601,8 @@ odm/lib64/camera/components/com.oplus.node.videohdr.so
 odm/lib64/camera/components/com.oplus.node.videonight.so
 odm/lib64/camera/components/com.qti.node.remosaic.so
 odm/lib64/camera/components/com.qti.stats.haf.so
-odm/lib64/camera/components/com.qti.stats.pdlib.so
-odm/lib64/camera/components/libipebpsstriping.so
+odm/lib64/camera/components/com.qti.stats.pdlib.so;MODULE_SUFFIX=_odm
+odm/lib64/camera/components/libipebpsstriping.so;MODULE_SUFFIX=_odm
 odm/lib64/lib2DSlender.so
 odm/lib64/libAlgoInterface.so
 odm/lib64/libAlgoProcess.so
@@ -900,7 +900,7 @@ vendor/etc/charger_fstab.qti
 # CNE
 vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
-vendor/bin/mutualex
+vendor/bin/mutualex;DISABLE_CHECKELF
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -933,12 +933,12 @@ vendor/etc/cne/profileMwqem.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libwms.so
-vendor/lib64/libwqe.so
+vendor/lib64/libwqe.so;DISABLE_CHECKELF
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
@@ -977,11 +977,11 @@ vendor/etc/Oppo_QC_LTM_Commercial_2020_01_03.pfm
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libhistogram.so
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_CHECKELF;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
+vendor/lib64/libdisplayconfig.qti.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libhistogram.so;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmcore.so;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libsdmutils.so
 
 # Display (SDM)
@@ -989,7 +989,7 @@ vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libgame_enhance.so
 vendor/lib64/libqseed3.so
-vendor/lib64/libsdedrm.so
+vendor/lib64/libsdedrm.so;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
@@ -1129,7 +1129,7 @@ odm/etc/sap.conf
 vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/mlid
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
@@ -1195,8 +1195,8 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/etc/init/ipa_fws.rc
 
 # Iris
-odm/lib64/libpwirisfeature.so
-odm/lib64/libpwirishalwrapper.so
+odm/lib64/libpwirisfeature.so;MODULE_SUFFIX=_odm
+odm/lib64/libpwirishalwrapper.so;MODULE_SUFFIX=_odm
 odm/lib64/vendor.pixelworks.hardware.display@1.0.so
 odm/lib64/vendor.pixelworks.hardware.display@1.1.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
@@ -1308,8 +1308,8 @@ vendor/lib/libOmxMpeghEncSw.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
+vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF
+vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libswvdec.so
@@ -1332,8 +1332,8 @@ vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libOmxVenc.so
-vendor/lib64/libOmxVpp.so
+vendor/lib64/libOmxVenc.so;DISABLE_CHECKELF
+vendor/lib64/libOmxVpp.so;DISABLE_CHECKELF
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
 
@@ -1567,7 +1567,7 @@ system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 vendor/bin/ims_rtp_daemon
-vendor/bin/imsdatadaemon
+vendor/bin/imsdatadaemon;DISABLE_CHECKELF
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/etc/init/ims_rtp_daemon.rc
