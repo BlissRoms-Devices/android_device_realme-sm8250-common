@@ -33,9 +33,9 @@ odm/lib/rfsa/adsp/libcalculator_domains_skel.so
 odm/lib/rfsa/adsp/libcalculator_skel.so
 odm/lib/rfsa/adsp/libhdr_skel.so
 odm/lib/rfsa/adsp/libhdrv3_skel.so
-odm/lib/rfsa/adsp/libhta_dsp_skel.so
+odm/lib/rfsa/adsp/libhta_dsp_skel.so;MODULE_SUFFIX=_odm
 odm/lib/rfsa/adsp/libhvxFaceBeautyPre_skel.so
-odm/lib/rfsa/adsp/libinterstellar_skel.so
+odm/lib/rfsa/adsp/libinterstellar_skel.so;MODULE_SUFFIX=_odm
 odm/lib/rfsa/adsp/libshdr_skel.so
 odm/lib/rfsa/adsp/libsnpe_dsp_domains_skel.so
 odm/lib/rfsa/adsp/libsnpe_dsp_skel.so
@@ -601,8 +601,8 @@ odm/lib64/camera/components/com.oplus.node.videohdr.so
 odm/lib64/camera/components/com.oplus.node.videonight.so
 odm/lib64/camera/components/com.qti.node.remosaic.so
 odm/lib64/camera/components/com.qti.stats.haf.so
-odm/lib64/camera/components/com.qti.stats.pdlib.so
-odm/lib64/camera/components/libipebpsstriping.so
+odm/lib64/camera/components/com.qti.stats.pdlib.so;MODULE_SUFFIX=_odm
+odm/lib64/camera/components/libipebpsstriping.so;MODULE_SUFFIX=_odm
 odm/lib64/lib2DSlender.so
 odm/lib64/libAlgoInterface.so
 odm/lib64/libAlgoProcess.so
@@ -901,7 +901,7 @@ vendor/etc/charger_fstab.qti
 # CNE
 vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
-vendor/bin/mutualex
+vendor/bin/mutualex;DISABLE_CHECKELF
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -934,12 +934,12 @@ vendor/etc/cne/profileMwqem.xml
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 vendor/lib64/libwms.so
-vendor/lib64/libwqe.so
+vendor/lib64/libwqe.so;DISABLE_CHECKELF
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
@@ -978,11 +978,11 @@ vendor/etc/Oppo_QC_LTM_Commercial_2020_01_03.pfm
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_CHECKELF;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libhistogram.so
+vendor/lib64/libhistogram.so;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libqdutils.so
-vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmcore.so;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libsdmutils.so
 
 # Display (SDM)
@@ -990,7 +990,7 @@ vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libgame_enhance.so
 vendor/lib64/libqseed3.so
-vendor/lib64/libsdedrm.so
+vendor/lib64/libsdedrm.so;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
@@ -1032,7 +1032,7 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libdpmqmihal.so
 
 # DRM
@@ -1150,7 +1150,7 @@ odm/etc/sap.conf
 vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/mlid
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
@@ -1216,8 +1216,8 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/etc/init/ipa_fws.rc
 
 # Iris
-odm/lib64/libpwirisfeature.so
-odm/lib64/libpwirishalwrapper.so
+odm/lib64/libpwirisfeature.so;MODULE_SUFFIX=_odm
+odm/lib64/libpwirishalwrapper.so;MODULE_SUFFIX=_odm
 odm/lib64/vendor.pixelworks.hardware.display@1.0.so
 odm/lib64/vendor.pixelworks.hardware.display@1.1.so
 odm/lib64/vendor.pixelworks.hardware.feature@1.0.so
@@ -1267,7 +1267,7 @@ vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_kona.xml
 vendor/etc/media_profiles_vendor.xml
 vendor/etc/system_properties.xml
-vendor/lib/libmmosal.so
+vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib/libqc2vppfilter.so|d383415a845b669ea8d6cb0822b3765183231782
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
@@ -1275,7 +1275,7 @@ vendor/lib/libqcodec2_core.so
 vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
-vendor/lib64/libmmosal.so
+vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libqc2vppfilter.so|07216c66eeb283096a4da88105ec06aefbf41bf6
 vendor/lib64/libqcodec2_base.so
 vendor/lib64/libqcodec2_basecodec.so
@@ -1329,8 +1329,8 @@ vendor/lib/libOmxMpeghEncSw.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
+vendor/lib/libOmxVideoDSMode.so;DISABLE_CHECKELF
+vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libswvdec.so
@@ -1354,7 +1354,7 @@ vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxSwVdec.so
 vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVenc.so
-vendor/lib64/libOmxVpp.so
+vendor/lib64/libOmxVpp.so;DISABLE_CHECKELF
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
 
@@ -1619,7 +1619,7 @@ system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
 system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
 system_ext/lib64/libdiag_system.so
 vendor/bin/ims_rtp_daemon
-vendor/bin/imsdatadaemon
+vendor/bin/imsdatadaemon;DISABLE_CHECKELF
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/etc/init/ims_rtp_daemon.rc
@@ -1668,7 +1668,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
 
 # Secure element
 odm/bin/hw/vendor.qti.secure_element@1.2-service
@@ -1793,7 +1793,7 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Snapdragon Computer Vision Engine
 vendor/lib/libfastcvdsp_stub.so
--vendor/lib/libfastcvopt.so
+vendor/lib/libfastcvopt.so
 vendor/lib/libscveCommon.so
 vendor/lib/libscveCommon_stub.so
 vendor/lib/libscveObjectSegmentation.so
@@ -1801,7 +1801,7 @@ vendor/lib/libscveObjectSegmentation_stub.so
 vendor/lib/libscveObjectTracker.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib64/libfastcvdsp_stub.so
--vendor/lib64/libfastcvopt.so
+vendor/lib64/libfastcvopt.so
 vendor/lib64/libscveCommon.so
 vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libscveObjectSegmentation.so
@@ -1824,9 +1824,8 @@ vendor/lib64/libsubsystem_control.so
 
 # Thermal engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine.conf|b959eb6b4d7b2b91a90f556c976676000361897a
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
 
 # Thermal engine - from LA.UM.9.12.r1-14100-SMxx50.0
 vendor/bin/thermal-engine|63eaafcd66f41133cc721e6dacffb718b7868034
