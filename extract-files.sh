@@ -70,7 +70,7 @@ function blob_fixup() {
             "${SIGSCAN}" -p "AF 0B 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         vendor/lib/libgui1_vendor.so)
-            "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
+            patchelf --replace-needed "libui.so" "libui-v30.so" "${2}"
             ;;
         odm/lib64/libwvhidl.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
@@ -78,44 +78,11 @@ function blob_fixup() {
         odm/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
-        odm/lib64/libdmtp.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        odm/lib64/libdmtpclient.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        odm/lib64/libdmtp-protos-lite.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        odm/lib64/lib-virtual-modem-protos.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        odm/lib64/liboplus_service.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
         odm/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         odm/lib64/libwvhidl.so)
             "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
-            ;;
-        vendor/lib64/libssc.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        vendor/lib64/libsensorcal.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        vendor/lib64/sensors.ssc.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        vendor/lib64/libsnsdiaglog.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        vendor/lib64/libsnsapi.so)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
-            ;;
-        vendor/bin/sensors.qti)
-            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
             ;;
         vendor/lib64/libwvhidl.so|vendor/lib/mediadrm/libwvdrmengine.so|vendor/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
